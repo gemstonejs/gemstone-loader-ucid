@@ -2,7 +2,7 @@
     "name":        "gemstone-loader-ucid",
     "homepage":    "http://github.com/gemstonejs/gemstone-loader-ucid",
     "description": "Webpack Loader for Unique Component Identifier in Gemstone JavaScript Technology Stack",
-    "version":     "0.9.20",
+    "version":     "0.9.21",
     "license":     "Apache-2.0",
     "author": {
         "name":    "Gemstone Project",
