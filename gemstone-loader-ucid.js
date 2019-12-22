@@ -33,11 +33,11 @@ module.exports = function (content) {
     /*  determine syntactically harmless id from filesystem path  */
     const hash = crypto.createHash("md5")
     hash.update(relPath)
-    let ucid = base58.encode(hash.digest())
+    const ucid = base58.encode(hash.digest())
 
     /*  inject */
-    let match   = new RegExp(options.idMatch, "g")
-    let replace = options.idReplace.replace(/<ucid>/, ucid)
+    const match   = new RegExp(options.idMatch, "g")
+    const replace = options.idReplace.replace(/<ucid>/, ucid)
     content = content.replace(match, replace)
 
     /*  return the resulting content  */
